@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container-1 {
+            display: flex;
+            background-color: purple;
+            flex-basis: 20%;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.8em;
+            color: white;
+            padding-top: 1em;
+        }
+        .container-2 {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+        }
+        .inside {
+            display: flex;
+            flex-basis: 20%;
+            background-color: green;
+            justify-content: center;
+            color: white;
+            font-size: 1.8em;
+            font-weight: bold;
+            padding-top: 1em;
+        }
+        .inside2 {
+            display: flex;
+            background-color: red;
+            flex-basis: 80%;
+            
+        }
+        .col {
+            display: flex;
+            background-color: goldenrod;
+            flex-basis: 50%;
+            color: white;
+            padding: 1em;
+            font-size: 1.8em;
+        }
+        .col2 {
+            display: flex;
+            background-color: gray;
+            flex-basis: 50%;
+            color: white;
+            padding: 1em;
+            font-size: 1.8em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-1">
+        Меню
+    </div>
+    <div class="container-2">
+        <div class="inside">
+            Заголовок
+        </div>
+        <div class="inside2">
+            <div class="col">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, porro?
+                Numquam velit distinctio magni cum atque qui, nulla accusamus laboriosam 
+                beatae ut iusto corrupti laudantium voluptas maxime alias, aliquam illum!
+            </div>
+            <div class="col2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Nam animi quod delectus velit voluptates, ipsa dolores aliquam, repellat voluptate 
+                quam et fugit quidem sint accusamus omnis, culpa laboriosam mollitia consequatur?
+            </div>
+        </div>
+    </div>
+</body>
+</html>
