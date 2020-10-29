@@ -21,6 +21,9 @@
         }
         span {
         }
+        .picture1, .picture2 {
+            display: flex;
+        }
         .picture1 {
             background-color: white;
         }
@@ -32,13 +35,15 @@
 </head>
 <body>
     <h1>Название</h1>
-    <div class="picture1">
-        <img src="project3.jpg" alt="это комп" height="300">
-        <span class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatem debitis odio cumque aliquam delectus repudiandae. Eaque, distinctio, minus impedit quasi iusto quibusdam id quam aliquam, sint culpa ipsum maxime.</span>
-    </div>
-    <div class="picture2">
-        <span class="text2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius velit ipsam maxime earum doloremque aut nostrum, dolorem, explicabo, deleniti voluptate officiis repellat modi omnis commodi. Nesciunt accusamus ut fugit eligendi!</span>
-        <img src="project4.jpg" alt="это тоже комп" height="300">
+    <div class="container">
+        <div class="picture1">
+            <img src="pic.jpg" alt="это комп" height="300">
+            <span class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatem debitis odio cumque aliquam delectus repudiandae. Eaque, distinctio, minus impedit quasi iusto quibusdam id quam aliquam, sint culpa ipsum maxime.</span>
+        </div>
+        <div class="picture2">
+            <span class="text2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius velit ipsam maxime earum doloremque aut nostrum, dolorem, explicabo, deleniti voluptate officiis repellat modi omnis commodi. Nesciunt accusamus ut fugit eligendi!</span>
+            <img src="pic.jpg" alt="это тоже комп" height="300">
+        </div>
     </div>
     <button>Кнопка</button>
 </body>
