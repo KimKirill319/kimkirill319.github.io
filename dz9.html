@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            height: 100vh;
+            margin: 0;
+        }
+        span {
+            position: absolute;
+            height: 25px;
+            width: 25px;
+            left: -25px;
+            border-radius: 50%;
+            background-color: yellow;
+        }
+        span:nth-child(1) {
+            animation: abc 8s 4s ease-in-out infinite;
+        }
+        span:nth-child(2) {
+            animation: abc 7s 2s ease-in-out infinite;
+        }
+        @keyframes abc{
+            25% {
+                top: 60%;
+            }
+            50% {
+                top: 50%;
+            }
+            75% {
+                top: 40%;
+            }
+            100% {
+                top: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-color: aquamarine;
+            margin: 0;
+            overflow: hidden;
+        }
+        .a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 1em;
+            padding: 2em;
+            height: 100px;
+            width: 100px;
+            animation: abc 1s .2s ease-in-out forwards;
+        }
+@keyframes abc {
+    70% {
+        font-size: 2.20em;
+        height: 325px;
+        width: 325px;
+    }
+    100% {
+        font-size: 2em;
+    height: 300px;
+    width: 300px;
+    padding: 2em;
+    background-color: blueviolet;
+    border-radius: 5px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="a">
+        Привет мир!
+    </div>
+</body>
+</html>
