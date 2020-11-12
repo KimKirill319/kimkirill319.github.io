@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .image1 {
+            background-image: url("night.jpg");
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .image2 {
+            background-image: url("night.jpg");
+            height: 100vh;
+            transform: rotate(180deg);
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        .text {
+            background-color: gray;
+            color: white;
+            height: 20vh;
+            font-family: fantasy;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-repeat: no-repeat;
+        }
+        .name {
+            background-image: url("snowflake.png");
+            width: 5px;
+            height: 5px;
+            position: absolute;
+            top: -5px;
+        }
+        .name:nth-child(1) {
+            left: 18vw;
+            animation: point 14s .4s linear infinite;
+        }
+        .name:nth-child(2) {
+            left: 36vw;
+            animation: point 18s .8s linear infinite;
+        }
+        .name:nth-child(3) {
+            left: 48vw;
+            animation: point 22s 1s linear infinite;
+        }
+        @keyframes point {
+            to {
+                top: 220vh;
+                transform: rotate(720deg);
+            }
+        }    
+    </style>
+</head>
+<body>
+    <div class="name"></div>
+    <div class="name"></div>
+    <div class="name"></div>
+    <div class="name"></div>
+    <div class="name"></div>
+    <div class="image1">
+
+    </div>
+    <div class="text">
+        Сделай сам!Не подсматривай в консоль
+    </div>
+    <div class="image2">
+
+    </div>
+</body>
+</html>
