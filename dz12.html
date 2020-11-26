@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0%;
+            padding: 0%;
+        }
+        .grid {
+            display: grid;
+            height: 100%;
+            grid-template-rows: 1.5fr 1.5fr 2fr 0.5fr 0.7fr;
+            grid-template-columns: 1.5fr 1.5fr 1.7fr 0.5fr 1.5fr;
+        }
+        .blue {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            background-color: cyan;
+            background-image: url(chicken.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .yellow {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 6;
+            background-color: yellow;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .purple {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            background-color: purple;
+        }
+        .white {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-column-end: 4;
+            grid-column-start: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Pacifico";
+            margin: 4em;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        .yellow1 {
+            grid-column-start: 4;
+            grid-column-end: 6;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            background-color: yellow;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 7em;
+            font-family: cursive;
+            color: red;
+        }
+        .pink {
+            grid-column-start: 4;
+            grid-column-end: 6;
+            grid-row-start: 3;
+            grid-row-end: 6;
+            background-color: pink;
+            background-image: url(ejik.png);
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .word {
+            font-family: Fantasy;
+            font-size: 5em;
+            color: slategray;
+        }
+        nav {
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: purple;
+        }
+        .left, .right {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .hamburger > div {
+            width: 35px;
+            height: 5px;
+            background-color: white;
+            margin: 6px 0;
+        } 
+        .portfolio {
+            font-weight: bold;
+            font-family: "Pacifico";
+            font-size: 6em;
+            color: white;
+        }
+        .home, .about  {
+            font-size: 2em;
+            color: white;
+            font-family: fantasy;
+        }
+        .expression {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 4;
+            grid-row-end: 5;
+            background-color: white;
+        }
+        .expressiontext {
+            font-size: 6em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="blue">
+
+        </div>
+        <div class="yellow">
+            <div class="word">
+                -life-
+            </div>
+        </div>
+            <nav>
+                <div class="left">
+                    <span class="portfolio">My portfolio</span>
+                </div>
+                <div class="right">
+                    <span class="home">Home</span>
+                    <span class="about">About</span>
+                    <div class="hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </nav>
+        <div class="white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, minus nulla officiis, saepe dolore voluptatem molestias eligendi sequi itaque, laudantium voluptas aliquid suscipit dolor consequatur esse iste aspernatur aperiam repellat.
+        </div>
+        <div class="expression">
+            <span class="expressiontext">EXPRESSION</span>
+        </div>
+        <div class="yellow1">
+            Personal
+        </div>
+        <div class="pink">
+
+        </div>
+    </div>
+</body>
+</html>
