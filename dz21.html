@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            background-color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let body = document.querySelector('body')
+        body.addEventListener ('mousemove', runevent)
+
+        function runevent(event) {
+            body.style.backgroundColor = 'rgb(' + event.offsetX + ',' + event.offsetY + ', 40)';
+        }
+    </script>
+</body>
+</html>

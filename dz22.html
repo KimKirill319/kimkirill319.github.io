@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0%;
+            display: flex;
+            flex-wrap: wrap
+        }
+        #newdiv1 {
+            background-color: cyan;
+        }
+        #newdiv2 {
+            background-color: darkblue;
+        }
+        #newdiv3 {
+            background-color: darkgreen;
+        }
+        #newdiv4 {
+            background-color: darkgrey;
+        }
+        div {
+            height: 50vh;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3em;
+            font-style: inherit;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="newdiv1">Click me!</div>
+    <div id="newdiv2">Click me!</div>
+    <div id="newdiv3">Click me!</div>
+    <div id="newdiv4">Click me!</div>
+    <script>
+        let div1 = document.querySelector('#newdiv1')
+        let div2 = document.querySelector('#newdiv2')
+        let div3 = document.querySelector('#newdiv3')
+        let div4 = document.querySelector('#newdiv4')
+
+
+        div1.addEventListener ('click', runevent)
+        div2.addEventListener ('click', runevent2)
+        div3.addEventListener ('click', runevent3)
+        div4.addEventListener ('click', runevent4)
+
+        function runevent(event) {
+            div1.style.backgroundcolor = 'blue';
+            div1.textContent = 'Dont click anymore!';
+        }
+
+        function runevent2(event) {
+            div2.style.backgroundcolor = 'blue';
+            div2.textContent = 'Dont click anymore!';
+        }
+
+        function runevent3(event) {
+            div3.style.backgroundcolor = 'blue';
+            div3.textContent = 'Dont click anymore!';
+        }
+
+        function runevent4(event) {
+            div4.style.backgroundcolor = 'blue';
+            div4.textContent = 'Dont click anymore!';
+        }
+    </script>
+</body>
+</html>
